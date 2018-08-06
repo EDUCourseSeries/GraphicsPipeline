@@ -26,7 +26,8 @@ void reshape(int w, int h)
 	glLoadIdentity();
 
 	//gluPerspective(60, (float)w / (float)h, 1.0, 100.0f);
-	glOrtho(-50, 70, -25, 55, -25, 25);
+	//glOrtho(-50, 70, -25, 55, -25, 25);
+	glFrustum(-50, 60, -25, 35, 1, 100);
 
 	//glGetDoublev(GL_PROJECTION_MATRIX, m);
 
