@@ -5,12 +5,12 @@
 int w = 800;
 int h = 600;
 
-double *m = new double[16];
+double* M = new double[16];
 
 void init(GLvoid)
 {
 	glShadeModel(GL_SMOOTH);
-	glClearColor(0.0f, 0.0f, 0.0f, 0.5f);
+	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 	glClearDepth(1.0f);
 	glEnable(GL_DEPTH_TEST);
@@ -21,17 +21,11 @@ void init(GLvoid)
 
 void reshape(int w, int h)
 {
-	glViewport(0, 0, w, h);
+	glViewport(0,0,w,h);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 
-	//gluPerspective(60, (float)w / (float)h, 1.0, 100.0f);
-	//glOrtho(-50, 70, -25, 55, -25, 25);
-	glFrustum(-50, 60, -25, 35, 1, 100);
-
-	//glGetDoublev(GL_PROJECTION_MATRIX, m);
-
-
+	gluPerspective(70, (double)w/(double)h, 1, 100);
 }
 
 
@@ -42,20 +36,13 @@ void display(void)
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	//gluLookAt(0.0f, 0.0f, 5.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
+	gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
-	glTranslatef(0.0f, 0.0f, -5.0f);
-	glPointSize(5.0f);
-	glBegin(GL_POINTS);
-	glVertex3f(.0f, 3.0f, .0f);
-	glEnd();
+	glTranslatef(0.0, 0.0, -5.0f);
 
-	glGetDoublev(GL_PROJECTION_MATRIX, m);
-
-	
+	glutSolidTeapot(2.0);
 
 	glutSwapBuffers();
-
 }
 
 void main(int argc, char** argv)

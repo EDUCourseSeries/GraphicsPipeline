@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{DF2D0916-DF02-4A11-B433-06B96FCDC65E}</ProjectGuid>
     <RootNamespace>GraphicsPiplineOpenGL</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
     <ProjectName>GraphicsPipeline-OpenGL</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -35,7 +35,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -48,7 +48,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -71,12 +71,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\张赐\Documents\Visual Studio 2017\Projects\GraphicsPipeline-OpenGL\glut;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\张赐\Documents\Visual Studio 2017\Projects\GraphicsPipeline-OpenGL\glut;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\Course\GraphicsPipeline\glut;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Course\GraphicsPipeline\glut;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\项目文档\Projects\GraphicsPipeline\trunk\glut;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\项目文档\Projects\GraphicsPipeline\trunk\glut;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\Course\GraphicsPipeline\glut;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Course\GraphicsPipeline\glut;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -96,6 +96,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>glut32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>G:\Course\GraphicsPipeline\glut;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
