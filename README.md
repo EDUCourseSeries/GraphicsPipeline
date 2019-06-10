@@ -22,6 +22,12 @@
 - 视口变换
 - 数学原理在OpenGL中的验证
 
+# CSDN学院在线视频地址 《计算机图形基础》
+http://edu.csdn.net/course/detail/6166
+
+# CSDN学院在线视频地址 
+https://edu.csdn.net/course/detail/6167
+
 # 说明
 glut文件夹中包含了glut的头文件和链接库文件，方便大家使用
 
