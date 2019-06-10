@@ -25,7 +25,7 @@
 # CSDN学院在线视频地址 《计算机图形基础》
 http://edu.csdn.net/course/detail/6166
 
-# CSDN学院在线视频地址 
+# CSDN学院在线视频地址 《计算机图形渲染管线》
 https://edu.csdn.net/course/detail/6167
 
 # 说明
